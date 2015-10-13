@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/re" android:layout_width="match_parent"
+    android:background="#D15B73"
+    android:layout_height="60dp">
+    <TextView
+        android:id="@+id/headline"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="我爱你"/>
+    </RelativeLayout>
+</LinearLayout>

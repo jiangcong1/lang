@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49.8dp"
+    android:background="#CC5D75" >
+
+    <TextView
+        android:id="@+id/common_titlebar_ib_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.9dp"
+        android:textColor="#Ffffff"
+    android:text="筛选" />
+
+    <TextView
+        android:id="@+id/common_titlebar_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="title"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/common_titlebar_ib_right"
+        android:layout_width="21.4dp"
+        android:layout_height="21.4dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8.9dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
