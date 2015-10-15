@@ -20,4 +20,5 @@ public class WriteLuckychanceActivity extends Activity {
 
     }
 
+
 }
