@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:background="@drawable/aboutit_background">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grid"/>
+    <ImageView
+        android:layout_width="14.2dp"
+        android:layout_height="12.8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8.8dp"
+        android:layout_marginRight="8.8dp"
+        android:background="@drawable/aboutit_attention"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/back_two"
+    android:layout_alignParentBottom="true"
+    android:layout_height="35.5dp">
+<ImageView
+    android:layout_width="14.2dp"
+    android:layout_height="8.88dp"
+    android:layout_marginLeft="13dp"
+    android:layout_marginTop="13dp"
+    android:background="@drawable/ideo"
+    android:id="@+id/imageView" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:layout_marginTop="5.3dp"
+        android:text="火辣的太阳"/>
+    <ImageView
+        android:layout_width="6.66dp"
+        android:layout_height="8.8dp"
+        android:background="@drawable/pin"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/text2"
+        android:layout_alignStart="@+id/text2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8.8sp"
+        android:layout_marginLeft="4dp"
+        android:text="广东省"
+
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="深圳市"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginLeft="5dp"
+        android:textSize="8.8sp"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+</RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ShouYouShiKong.activity.LuckychanceActivity">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="42.6dp"
+        android:background="#D15B73">
+        <ImageView
+            android:layout_width="9.77dp"
+            android:layout_height="20.4dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/news_chat_return"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="beijing"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/maptier">
+        <LinearLayout
+            android:layout_width="68.8dp"
+            android:layout_height="26.6dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22.2dp"
+            android:background="@drawable/toupload">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="8dp"
+                android:text="2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:text="条动态"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

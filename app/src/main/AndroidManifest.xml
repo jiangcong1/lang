@@ -41,6 +41,15 @@
             android:label="@string/title_activity_information"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
+        <activity
+            android:name=".activity.WriteLuckychanceActivity"
+            android:label="@string/title_activity_write_luckychance"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity android:name=".activity.IssueMessageActivity" >
+        </activity>
+        <activity android:name=".activity.LuckychanceActivity" >
+        </activity>
     </application>
 
 </manifest>

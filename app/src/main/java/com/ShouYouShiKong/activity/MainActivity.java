@@ -5,17 +5,16 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 
 import com.ShouYouShiKong.R;
-import com.ShouYouShiKong.fragment.NeswFragment;
-import com.ShouYouShiKong.fragment.MeFragment;
-import com.ShouYouShiKong.fragment.FindFragment;
 import com.ShouYouShiKong.fragment.AppointmentFragment;
+import com.ShouYouShiKong.fragment.FindFragment;
+import com.ShouYouShiKong.fragment.MeFragment;
+import com.ShouYouShiKong.fragment.NeswFragment;
 
 
 public class MainActivity extends FragmentActivity {
@@ -63,6 +62,7 @@ public class MainActivity extends FragmentActivity {
         fth = (FragmentTabHost) findViewById(android.R.id.tabhost);
         fth.setup(this, getSupportFragmentManager(),
                 R.id.main_fl_realtabcontent);
+        fth.getTabWidget().setDividerDrawable(null);
         for (int i = 0; i < navs.length; i++) {
             TabSpec spec = fth.newTabSpec(navs[i]).setIndicator(
                     getIndicatorView(i));

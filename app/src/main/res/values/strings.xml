@@ -5,4 +5,5 @@
     <string name="title_activity_mdjlp">MdjlpActivity</string>
     <string name="title_activity_condition">condition</string>
     <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_write_luckychance">WriteLuckychanceActivity</string>
 </resources>

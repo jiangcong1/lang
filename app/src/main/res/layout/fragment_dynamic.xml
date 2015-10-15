@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="37.7dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13.3dp"
+        android:layout_marginLeft="13.3dp"
+        android:src="@drawable/wond" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginTop="13dp"
+        android:textSize="15.5sp"
+        android:layout_toRightOf="@+id/iv_head"
+        android:text="思念与" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/account"
+ android:textSize="11.1sp"
+        android:layout_alignStart="@+id/account"
+        android:layout_below="@+id/account"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:text="25分钟"
+        android:id="@+id/textView9" />
+
+    >
+
+<TextView
+    android:id="@+id/text3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="你说这个世界是怎么样的"
+    android:layout_below="@+id/textView9"
+    android:layout_marginTop="13.3dp"
+    android:layout_marginLeft="13.3dp"
+    />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="88.8dp"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginTop="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:orientation="horizontal"
+        >
+<ImageView
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture_one"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13.3dp"
+            android:background="@drawable/picture_two"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="13.3dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/picture_there"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:id="@+id/linearLayout2">
+    <ImageView
+        android:layout_width="26.6dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="13.3dp"
+        android:background="@drawable/iocn_next"/>
+        <ImageView
+            android:layout_width="26.6dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/iocn_review"
+
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

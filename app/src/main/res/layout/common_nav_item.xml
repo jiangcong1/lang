@@ -16,8 +16,7 @@
         android:id="@+id/common_nav_tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@drawable/colour_text"
 
-        android:textSize="12sp" />
+         />
 
 </LinearLayout>

@@ -1,81 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="match_parent"
+
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/relative"
+        android:src="@drawable/wond" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_head"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="思念与" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_head"
+        android:layout_alignBottom="@+id/iv_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="在不在，明天我们一" />
+
+    <TextView
+        android:id="@+id/tv_spme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="62dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="10dp"
+        android:text="15km/20min" />
 
-        <ImageView
+    <RelativeLayout
+        android:id="@+id/rl_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/iv_head"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/news_news">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/wond" />
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="20" />
 
-        <LinearLayout
-            android:id="@+id/line4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp">
-
-                <TextView
-                    android:id="@+id/account"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="思念与" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="分钟" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginLeft="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                   
-
-                    android:text="你说的是什么我不知道" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="right"
-                android:background="@drawable/news_news">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerInParent="true"
-                    android:text="20" />
-            </RelativeLayout>
+    </RelativeLayout>
 
 
-        </LinearLayout>
-    </LinearLayout>
+
+
 
 
 </RelativeLayout>

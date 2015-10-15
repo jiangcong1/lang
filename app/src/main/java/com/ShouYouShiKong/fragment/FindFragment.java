@@ -1,17 +1,29 @@
 package com.ShouYouShiKong.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.view.ViewTreeObserver;
+import android.widget.ListAdapter;
+
 
 import com.ShouYouShiKong.R;
-import com.ShouYouShiKong.activity.ConditionActivity;
+import com.ShouYouShiKong.adapter.FindAdapter;
+import com.ShouYouShiKong.view.LineGridView;
 
 
-public class FindFragment extends BaseFragment implements View.OnClickListener{
-	Button button;
+public class FindFragment extends BaseFragment implements View.OnClickListener {
 
+	private LineGridView gv = null;
+	private boolean isFirstLayout = false;
+	private int[] resIds = { R.drawable.fatecircle,
+			R.drawable.game, R.drawable.nearby,
+			R.drawable.phtot, R.drawable.rio,
+	};
+
+
+
+	private String[] names = {"有缘人", "缘分圈", "搜附近", "千里约", "娱乐园",
+	};
 	@Override
 	protected Bundle initLeftBtn() {
 		// TODO Auto-generated method stub
@@ -32,20 +44,35 @@ public class FindFragment extends BaseFragment implements View.OnClickListener{
 	@Override
 	protected int getContentLayoutId() {
 		// TODO Auto-generated method stub
-		return R.layout.fragment_news;
+		return R.layout.fragment_find;
 	}
 
 	@Override
 	protected void initViews(View view) {
 		// TODO Auto-generated method stub
-		button = (Button) view.findViewById(R.id.button);
-		button.setOnClickListener(this);
+		gv = (LineGridView) view.findViewById(R.id.gridview);
+		// 监听第一次加载，为了得到gv的实际高传入adapter进行高度适配
+		ViewTreeObserver observer = gv.getViewTreeObserver();
+		observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+
+			@Override
+			public void onGlobalLayout() {
+				// TODO Auto-generated method stub
+
+				if (!isFirstLayout) {
+					isFirstLayout = true;
+				ListAdapter adapter=new FindAdapter(activity,gv.getHeight()/2,resIds,names);
+					gv.setAdapter(adapter);
+
+				}
+			}
+		});
+
 	}
 
+
+
 	public void onClick(View view) {
-		switch (view.getId()) {
-			case R.id.button:
-				startActivity(new Intent(getActivity(), ConditionActivity.class));
-		}
+
 	}
 }
